@@ -3,31 +3,46 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-    background-color: #96858F ;
-    color: white;
+    background-color: #D5D5D5 ;
+    color: black;
     font-family: Arial;
-    margin-left: 100px;
-    margin-right: 100px;
+   
+}
+
+footer {
+    text-align: center;
 }
 
 img {
-    margin-left: 100px;
-    margin-right: 100px;
-    float: left;
+    float: right;
+    padding: 25px 25px 25px 25px;
 }
 
-h1 {
+header {
+    padding:60px 16px;
+}
+header.welcomeheader {
+    background-color: #96858F;
+}
+
+h1.header {
     color: white;
-    font-family: 'Archerus Grotesque';
-    margin-left: 100px;
-    margin-right: 100px;
-    
+    font-size: 80px;
+    text-align: center;
+    font-family: "Lato", sans-serif
 }
 
+p.description {
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    padding: 0px;
+}
 p {
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 24px;
+    font-size: 17px;
+    float: none;
+    line-height: 25px;
+    padding: 25px 25px 25px 25px;
 }
 
 
@@ -35,9 +50,7 @@ p {
 .topnav {
     background-color: #9099A2;
     overflow: hidden;
-    margin-left: 100px;
-    margin-right: 100px;
-
+  
 }
 
 /* Style the links inside the navigation bar */
@@ -48,7 +61,6 @@ p {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-
 }
 
 /* Change the color of links on hover */
@@ -62,5 +74,6 @@ p {
     background-color: #6D7993;
     color: white;
 }
+
 
 
