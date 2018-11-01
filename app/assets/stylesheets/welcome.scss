@@ -3,38 +3,47 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-    background-color: #D5D5D5 ;
+    background-color: white ;
     color: black;
-    font-family: Arial;
+    font-family: Times;
+    margin: 0;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #9099A2;
+    background-color: white;
     overflow: hidden;
+    border-style: double;
+    border-color: black;
+    
   
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #6D7993;
+    background-color: black;
+    border-right: 0.5px solid white;
+    border-left: 0.5px solid white;
     color: white;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #6D7993;
+    background-color: black;
     color: white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-color: black;
 }
 
 header {
@@ -42,22 +51,23 @@ header {
 }
 
 header.welcomeheader {
-    background-color: #96858F;
+    background-image: url(https://income-outcome.com/wp-content/uploads/2018/02/Legal-White-Paper-Header-background-image-black-overlay.png);
+    background-size: auto;
 }
 
 h1.header {
     color: white;
     font-size: 80px;
     text-align: center;
-    font-family: "Lato", sans-serif
+    font-family: Times New Roman;
 }
 
 p.description {
     text-align: center;
+    font-family: Times New Roman;
     color: white;
     font-size: 25px;
     font-style: italic;
-    font-weight: bold;
     padding: 0px;
 }
 
@@ -67,27 +77,30 @@ div.box {
     width: 600px;
     padding: 25px;
     height: 300px;
+    margin-bottom: 100px;
+  
 }
 
 img {
-    padding: 45px;
+    padding-left: 30px;
+    padding-top: 50px;
 }
+
 
 div.clearfix {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    padding: 50px;
+    margin-bottom: 50px;
 }
 
-.clearfix::after {
+div.clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
 
-img {
-    float: right;
-}
 
 p {
     font-size: 20px;
@@ -97,5 +110,4 @@ p {
 footer {
     text-align: center;
 }
-
 
