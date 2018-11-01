@@ -6,45 +6,7 @@ body {
     background-color: #D5D5D5 ;
     color: black;
     font-family: Arial;
-   
 }
-
-footer {
-    text-align: center;
-}
-
-img {
-    float: right;
-    padding: 25px 25px 25px 25px;
-}
-
-header {
-    padding:60px 16px;
-}
-header.welcomeheader {
-    background-color: #96858F;
-}
-
-h1.header {
-    color: white;
-    font-size: 80px;
-    text-align: center;
-    font-family: "Lato", sans-serif
-}
-
-p.description {
-    text-align: center;
-    color: white;
-    font-size: 17px;
-    padding: 0px;
-}
-p {
-    font-size: 17px;
-    float: none;
-    line-height: 25px;
-    padding: 25px 25px 25px 25px;
-}
-
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -66,7 +28,7 @@ p {
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #6D7993;
-    color: black;
+    color: white;
 }
 
 /* Add a color to the active/current link */
@@ -75,5 +37,65 @@ p {
     color: white;
 }
 
+header {
+    padding:60px 16px;
+}
+
+header.welcomeheader {
+    background-color: #96858F;
+}
+
+h1.header {
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    font-family: "Lato", sans-serif
+}
+
+p.description {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0px;
+}
+
+div.box {
+    display: inline-block;  
+    float: left;
+    width: 600px;
+    padding: 25px;
+    height: 300px;
+}
+
+img {
+    padding: 45px;
+}
+
+div.clearfix {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    float: right;
+}
+
+p {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+footer {
+    text-align: center;
+}
 
 
