@@ -1,0 +1,18 @@
+<h1>Listing Tips</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Name</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @tips.each do |tip| %>
+    <tr>
+      <td><%= tip.title %></td>
+      <td><%= tip.text %></td>
+      <td><%= tip.text %></td>
+      <td><%= link_to 'Show', tip_path(tip) %></td>
+    </tr>
+  <% end %>
+</table>

@@ -2,9 +2,12 @@ class TipsController < ApplicationController
     def new
     end
     
+    def index
+        @tips = Tip.all
+    end
+    
     def create
         @tip = Tip.new(tip_params)
-        
         @tip.save
         redirect_to @tip
     end
