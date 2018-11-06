@@ -3,6 +3,18 @@ class TipsController < ApplicationController
     end
     
     def create
-        render plain: params[:tip].inspect
+        @tip = Tip.new(tip_params)
+        
+        @tip.save
+        redirect_to @tip
+    end
+    
+    def show
+        @tip = Tip.find(params[:id])
     end
 end
+
+private
+    def tip_params
+        params.require(:tip).permit(:title, :text, :name, :category)
+    end
