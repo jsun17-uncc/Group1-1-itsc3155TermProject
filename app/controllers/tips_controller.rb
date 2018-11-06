@@ -1,5 +1,6 @@
 class TipsController < ApplicationController
     def new
+        @tip = Tip.new
     end
     
     def index
@@ -8,8 +9,11 @@ class TipsController < ApplicationController
     
     def create
         @tip = Tip.new(tip_params)
-        @tip.save
-        redirect_to @tip
+        if @tip.save
+            redirect_to @tip
+        else
+            render 'new'
+        end
     end
     
     def show

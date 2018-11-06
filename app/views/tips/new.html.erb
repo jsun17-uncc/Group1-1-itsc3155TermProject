@@ -1,5 +1,19 @@
 <h1>New Tip</h1>
 <%= form_for :tip, url: tips_path do |f| %>
+ 
+  <% if @tip.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@tip.errors.count, "error") %> prohibited
+        this tip from being saved:
+      </h2>
+      <ul>
+        <% @tip.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
   
    <p>
     <%= f.label :title %><br>
