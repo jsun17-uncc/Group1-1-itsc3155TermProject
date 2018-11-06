@@ -1,10 +1,10 @@
 class TipsController < ApplicationController
-    def new
-        @tip = Tip.new
-    end
-    
     def index
         @tips = Tip.all
+    end
+    
+    def new
+        @tip = Tip.new
     end
     
     def create
