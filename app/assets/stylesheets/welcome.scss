@@ -2,57 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-    background-color: white ;
-    color: black;
-    font-family: Times;
-    margin: 0;
-}
-
-/* This will add a black background color at the top of the navigation */
-.topnav {
-    background-color: white;
-    overflow: hidden;
-    border-style: double;
-    border-color: black;
-    
-  
-}
-
-/* This will style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: underline;
-    font-size: 17px;
-}
-
-/* Added a hover element on navigation bar */
-.topnav a:hover {
-    background-color: black;
-    border-right: 0.5px solid white;
-    border-left: 0.5px solid white;
-    color: white;
-}
-
-/* Color of the active/current link in the navigation bar */
-.topnav a.active {
-    background-color: black;
-    color: white;
-    border-right: 1px solid white;
-    border-left: 1px solid white;
-    border-color: black;
-}
-
 header {
-    padding:60px 16px;
-}
 
+}
 header.welcomeheader {
     background-image: url(https://income-outcome.com/wp-content/uploads/2018/02/Legal-White-Paper-Header-background-image-black-overlay.png);
     background-size: auto;
+    padding:90px 0px;
+
 }
 
 h1.header {
@@ -71,43 +28,5 @@ p.description {
     padding: 0px;
 }
 
-div.box {
-    display: inline-block;  
-    float: left;
-    width: 600px;
-    padding: 25px;
-    height: 300px;
-    margin-bottom: 100px;
-  
-}
 
-img {
-    padding-left: 30px;
-    padding-top: 50px;
-}
-
-
-div.clearfix {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    padding: 50px;
-    margin-bottom: 50px;
-}
-
-div.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-
-p {
-    font-size: 20px;
-    line-height: 35px;
-}
-
-footer {
-    text-align: center;
-}
 
