@@ -19,6 +19,19 @@ class TipsController < ApplicationController
     def show
         @tip = Tip.find(params[:id])
     end
+    
+    def edit
+        @tip = Tip.find(params[:id])
+    end
+    
+    def update
+        @tip = Tip.find(params[:id])
+        if @tip.update(tip_params)
+            redirect_to @tip
+        else
+            render 'edit'
+        end
+    end
 end
 
 private
