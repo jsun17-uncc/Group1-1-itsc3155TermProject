@@ -32,6 +32,13 @@ class TipsController < ApplicationController
             render 'edit'
         end
     end
+    
+    def destroy
+        @tip = Tip.find(params[:id])
+        @tip.destroy
+        
+        redirect_to tips_path
+    end
 end
 
 private
