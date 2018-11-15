@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
         @comment = @tip.comments.create(comment_params)
         redirect_to tip_path(@tip)
     end 
-    
+
     private
         def comment_params
             params.require(:comment).permit(:commenter, :body)
