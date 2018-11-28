@@ -23,7 +23,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-// navigation bar
+// CSS FOR NAVIGATION BAR
 
 
 // typography 
@@ -53,12 +53,8 @@ p {
   line-height: 1.7em;
 }
 
-#list {
-  font-size: 17px;
-  line-height: 1.7em;
-}
 
-// formatting for all the headers
+//FORMATTING FOR THE HEADER THAT GOES ON EVERY PAGE
 
 #logo {
   float: left;
@@ -75,6 +71,7 @@ p {
   text-decoration: none;
 }
 
+//CSS FOR THE TABLE ON THE INDEX.HTML.ERB FOR THE TIPS CONTROLLER
 table {
     margin-left: auto;
     margin-right: auto;
@@ -94,22 +91,18 @@ td {
     line-height: 25px;
 }
 
-// formatting for links inserted
+//FORMAT FOR ALL LINKS ON THE WEBSITE APPLICATION
 a {
     color: gray;
+    font-size: 17px;
 }
 
 a:hover {
     color: black;
 }
 
-form {
-    margin-left: auto;
-    margin-right: auto;
-}
 
-
-// footer
+//CSS FOR FOOTER THAT GOES ON EACH PAGE
 
 footer {
     position: relative;
@@ -117,8 +110,10 @@ footer {
     margin-top: 45px;
     padding-top: 5px;
     border-top: 1px solid #eaeaea;
-  color: black;
+    color: black;
 }
+
+//CSS FOR THE ADD TIP FORM
 
 input[type=text] {
     width: 100%;
@@ -134,4 +129,38 @@ textarea {
     border: 2px solid #ccc;
     background-color: #f8f8f8;
     resize: none;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//CSS FORMAT FOR THE LIST OF INTERVIEW QUESTIONS 
+#list {
+  font-size: 17px;
+  line-height: 1.7em;
+}
+
+
+//CSS FOR THE TWO COLUMN FORMAT ON THE WELCOME PAGE
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+//ALLOWS WEBSITE APPLICATION TO ADJUST SET UP FOR MOBILE DEVICES
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 100%;
+  }
 }
