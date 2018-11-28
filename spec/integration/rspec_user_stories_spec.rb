@@ -134,6 +134,9 @@ feature "User deletes an existing tip" do
         
         visit tips_path
         expect(page).to have_content("Listing Tips")
+        expect(page).to have_content("New Capybara Interview Post 4")
+        expect(page).to have_content("Norm the Niner")
+        expect(page).to have_content("This is a new Capybara Tip 4")
         click_link "Destroy"
         expect(page).to have_no_content("New Capybara Interview Post 4")
         expect(page).to have_no_content("Norm the Niner")
