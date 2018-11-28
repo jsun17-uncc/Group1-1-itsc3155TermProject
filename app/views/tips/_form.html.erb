@@ -1,5 +1,7 @@
+<%-#This is the form partial for the 'new' and 'edit' pages  -%>
 <%= form_for @tip do |f| %>
- 
+  
+  <%- #Specifies any errors that arise -%>
   <% if @tip.errors.any? %>
     <div id="error_explanation">
       <h2>
