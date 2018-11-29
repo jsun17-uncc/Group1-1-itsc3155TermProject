@@ -1,13 +1,14 @@
+<%-# commenter -%>
 <p>
     <strong>Commenter:</strong>
     <%= comment.commenter %>
 </p>
- 
+ <%-#comment -%>
 <p>
     <strong>Comment:</strong>
     <%= comment.body %>
 </p>
-
+<%-#Destroy the comment  -%>
 <p>
     <%= link_to 'Destroy Comment', [comment.tip, comment],
                 method: :delete,
