@@ -1,17 +1,17 @@
 # this controller handles how tips within the application are handled
 class TipsController < ApplicationController
     
-    # displays all tips in the database
+    # this will display all tips in the database in a list
     def index
         @tips = Tip.all
     end
     
-    # method to take the user to the new tip form
+    # the method is used  to take the user to the new tip form 
     def new
         @tip = Tip.new
     end
     
-    # takes the parameters passed in and creates a tip based on them
+    #the def create will take the parameters passed in and creates a new tip based on what was entered
     def create
         @tip = Tip.new(tip_params)
         if @tip.save
@@ -21,17 +21,17 @@ class TipsController < ApplicationController
         end
     end
     
-    # method to find the specified tip and show it
+    # this method was created to find the specified tip and show it
     def show
         @tip = Tip.find(params[:id])
     end
     
-    # method to take the user to the tip edit page
+    # this method was created to take the user to the tip edit page
     def edit
         @tip = Tip.find(params[:id])
     end
     
-    #takes the parameters and updates the specified tip
+    #this method was created to update the tips. it will take the parameters and updates the specified tip
     def update
         @tip = Tip.find(params[:id])
         if @tip.update(tip_params)
@@ -41,7 +41,7 @@ class TipsController < ApplicationController
         end
     end
     
-    # method to destroy the specified tip
+    # this method was created to destroy the specified tip
     def destroy
         @tip = Tip.find(params[:id])
         @tip.destroy
@@ -50,6 +50,7 @@ class TipsController < ApplicationController
     end
 end
 
+    #title, text, name, and category is taken
 private
     def tip_params
         params.require(:tip).permit(:title, :text, :name, :category)
