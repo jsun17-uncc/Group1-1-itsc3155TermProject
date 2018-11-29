@@ -31,7 +31,7 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
-
+// heading 1 color, size, spacing, and weight formatting 
 h1 {
   font-size: 60px;
   letter-spacing: -2px;
@@ -42,6 +42,8 @@ h1 {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+// heading 2 color, size, spacing, and weight formatting 
+
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
@@ -51,12 +53,15 @@ h2 {
   color: #777;
 }
 
+// heading 3 size, weight, and alignement 
+
 h3 {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
 }
 
+//paragraph font size and height
 p {
   font-size: 17px;
   line-height: 1.7em;
