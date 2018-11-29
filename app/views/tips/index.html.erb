@@ -4,14 +4,14 @@
 </header>
 
 <br>
- 
+ <%-# Table with titles included -%>
 <table>
   <tr>
     <th>TITLE</th>
     <th>NAME</th>
     <th>TEXT</th>
   </tr>
- 
+ <%-# what each tip will do -%>
   <% @tips.each do |tip| %>
     <tr>
       <td><%= tip.title %></td>
@@ -19,6 +19,7 @@
       <td><%= tip.text %></td>
       <td><%= link_to 'Show', tip_path(tip) %></td>
       <td><%= link_to 'Edit', edit_tip_path(tip) %></td>
+ <%-#Destroy comment  -%>
       <td><%= link_to 'Destroy',
                                 tip_path(tip),
                                 method: :delete,
@@ -26,5 +27,5 @@
     </tr>
   <% end %>
 </table>
-
+<%-# Link to add a new tip that will direct you the appropriate page -%>
 <%= link_to 'Add New Tip', new_tip_path %>
