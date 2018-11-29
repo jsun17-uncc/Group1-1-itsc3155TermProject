@@ -3,25 +3,33 @@
 </header>
 <br>
 <% if false %>
-This is the page that shows the tip specified by the user. It displays the title 
-of the tip, the name of the individual who posted it, the text, and the
-associated comments.
+<%-#This is the page that shows the tip specified by the user. -%>
+<%-#It displays the title of the tip, the name of the individual who posted it, the text, and the associated comments.  -%>
+
+
 <% end %>
+<%-#Title header Creation -%>
   <p>
     <strong>Title:</strong>
     <%= @tip.title %>
   </p>
   
+  <%-#Name header Creation -%>
+
   <p>
     <strong>Name:</strong>
     <%= @tip.name %>
   </p>
    
+   <%-#Text header creation -%>
+
   <p>
     <strong>Text:</strong>
     <%= @tip.text %>
   </p>
   
+  <%-#Comments Creation an adding a comment on the form -%>
+
  <h2>Comments</h2>
   <%= render @tip.comments %>
 
